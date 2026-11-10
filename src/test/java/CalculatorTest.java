@@ -32,4 +32,9 @@ public class CalculatorTest {
         Calculator calc = new Calculator();
         assertThrows(IllegalArgumentException.class, () -> calc.divide(5, 0));
     }
+    @Test
+    public void testPower() {
+        Calculator calculator = new Calculator();
+        assertEquals(8, calculator.power(2, 3));
+    }
 }

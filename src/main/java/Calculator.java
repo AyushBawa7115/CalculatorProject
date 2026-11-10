@@ -6,4 +6,7 @@ public class Calculator {
         if (b == 0) throw new IllegalArgumentException("Cannot divide by zero");
         return a / b;
     }
+    public int power(int base, int exponent) {
+        return (int) Math.pow(base, exponent);
+    }
 }
